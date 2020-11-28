@@ -524,7 +524,7 @@ class GlpiRestApi94Provider extends AbstractProvider {
         $uri = 'ITILCategory';
 		$result = $this->runGETHttpRequest($uri, $sessiontoken);
 		
-		$file_log = 'log.txt';
+		$file_log = '/usr/share/centreon/www/modules/centreon-open-tickets/restAPI.log';
 		file_put_contents($file_log, $result);
 		
 		$itilcategory = array();
